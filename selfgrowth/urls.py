@@ -24,4 +24,6 @@ urlpatterns = [
     path('cantact',views.cantact,name= 'cantact'),
     path('chai', include('chai.urls')),
     
+    
+    path("__reload__/", include("django_browser_reload.urls"))
 ]
